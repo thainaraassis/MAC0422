@@ -1,0 +1,31 @@
+EP2 - Simulador de Corrida
+
+Como compilar:
+
+- No diretório do projeto, execute:
+
+        make           # compila o ep2
+    
+    O binário gerado será:
+
+        ./ep2
+   
+
+Como executar:
+   
+- Basta chamar:
+
+        ./ep2 <d> <k> <e/i> [-debug]
+
+    Sendo,
+
+        <d> = comprimento da pista
+        <k> = número de ciclistas (threads)
+        <e/i> = modelo de acesso: i -> ingenuo (mutex único), e -> eficiente (mutex por coluna)
+        [-debug] = (opcional) habilita saída detalhada a cada passo
+
+    Exemplos:
+
+    ./ep2 100 250 e -debug
+
+    ./ep2 100 250 i 

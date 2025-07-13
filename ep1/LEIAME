@@ -1,0 +1,49 @@
+EP1 - Shell USP e Simulador de Processos
+
+Como compilar:
+
+- Certifique-se de que a biblioteca readline está instalada:
+
+    Debian/Ubuntu:
+
+        sudo apt install libreadline-dev
+
+
+- No diretório do projeto, execute:
+
+        make           # compila os dois programas
+    
+        ou
+
+        make uspsh     # compila apenas o shell
+        make ep1       # compila apenas o simulador
+    
+    Os binários gerados serão:
+
+        ./uspsh
+        ./ep1
+   
+
+Como executar:
+
+- Shell (uspsh)
+
+    Basta chamar:
+
+        ./uspsh
+   
+- Simulador (ep1)
+
+    Basta chamar:
+   
+        ./ep1 <escalonador> <arquivo‑entrada> <arquivo‑saida>
+   
+    Sendo,
+   
+        <escalonador> = 1  - FCFS
+        <escalonador> = 2  - SRTN
+        <escalonador> = 3  - Escalonamento com prioridade
+   
+    Exemplo:
+
+    ./ep1 2 entrada1.txt out1.txt

@@ -1,0 +1,30 @@
+EP3 - Simulador de Gerência de Memória
+
+Como compilar:
+
+- No diretório do projeto, execute:
+
+        make           # compila o ep3
+    
+    O binário gerado será:
+
+        ./ep3
+   
+
+Como executar:
+   
+- Basta chamar:
+
+        ./ep3 n <nome do arquivo PGM de entrada> <nome do arquivo de trace> <nome do arquivo PGM de saída>
+
+    Sendo,
+
+        n = 1 - First Fit
+        n = 2 - Next Fit
+        n = 3 - Best Fit
+        n = 4 - Worst Fit
+
+
+    Exemplo:
+
+    ./ep3 1 ep3-exemplo01.pgm trace-firstfit saida.pgm

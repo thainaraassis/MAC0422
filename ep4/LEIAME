@@ -1,0 +1,31 @@
+Como executar o script ep4.sh
+
+1. Verifique se os seguintes pacotes estão instalados:
+   - gnuplot
+   - dateutils
+
+2. Antes de executar o script pela primeira vez, é necessário garantir que ele tenha permissão de execução.
+Para isso, rode o comando abaixo no terminal:
+
+    chmod +x ep4.sh
+
+3. Depois disso, o script pode ser executado normalmente:
+
+    ./ep4.sh <N_CLIENTES> <TAMANHO1_MB> <TAMANHO2_MB> ...
+
+    Exemplo usado na demonstração:
+
+        ./ep4.sh 10 5 10
+
+    Esse comando executa o script com 10 clientes concorrentes, enviando arquivos de 5MB e 10MB para os servidores.
+
+    Ao final da execução, será gerado um gráfico PDF:
+
+        ep4-resultados-10.pdf
+
+4. Link para o vídeo da demonstração:
+
+    https://drive.google.com/file/d/1B78gLJh_1R-PdRzn5-AzwjwW8iENz_-G/view?usp=sharing
+
+
+
